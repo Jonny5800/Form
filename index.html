@@ -1,37 +1,41 @@
 <html>
 
 <head>
-    <title>Form</title>
+    <title>Car Compeiion Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <script scr="script.js"></script>
+
+
 
     <h1>Free Car Competition Form</h1>
     <h2>Enter your details to have a chance of winning</h2>
-    <br>
-    <h3>Enter your name</h3>
-    <form action=" https://www.pistonheads.com/submit-broken-link">
+    <form id="whole-form">
+        <script scr="script.js"></script>
+
+        <br>
+        <h3>Enter your name</h3>
+        <!--form was where "label" is--><label action=" https://www.pistonheads.com/submit-broken-link" size="50" widh=1 00p>
         <input</form>
             <input type="text" placeholder="Enter your name">
 
             <h3>Enter your E-mail</h3>
-            <form action=" https://www.pistonheads.com/submit-broken-link2">
+           <!--form was where label is--> <label action=" https://www.pistonheads.com/submit-broken-link2">
                 <input</form>
                     <input type="text" placeholder="Enter your E-mail">
 
                     <h3>Select your age</h3>
-                    <form action=" https://www.pistonheads.com/submit-broken-link3">
+                    <!--form was where "label" is--><label action="https://www.pistonheads.com/submit-broken-link3">
                         <input</form>
                             <input type="number" placeholder="Select your age">
                             <h3>Choose a manufacturer</h3>
 
                             <!--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select-->
-                            <form action=" https://www.pistonheads.com/submit-broken-link2">
+                            <!--form was where "label" is--><label action=" https://www.pistonheads.com/submit-broken-link2">
 
                                 <label for="cars">Manufacturer</label>
-                                <select id="cars" name="cars">
+        <select id="cars" name="cars">
                                 <option value="AUDI">AUDI</option>
                                 <option value="maker">1</option>
                                 <option value="maker">2</option>    
@@ -39,22 +43,22 @@
                                 <option value="maker">4</option>
                                 <option value="maker">5</option>
                                 </select>
-                                <!--^^input type needed, whether "submit" or otherwise-->
-                            </form>
-                            <h3>Choose an option</h3>
-                            <input id="choice" type="radio" name="choose-choice">choice1
-                            <br>
-                            <input id="choice" type="radio" name="choose-choice">choice2
-                            <br>
-                            <input id="choice" type="radio" name="choose-choice">choice3
-                            <br>
-                            <input id="choice" type="radio" name="choose-choice">choice4
+        <!--^^input type needed, whether "submit" or otherwise-->
+        <!--</form>-->
+        <h3>Choose an option</h3>
+        <input id="choice" type="radio" name="choose-choice">choice1
+        <br>
+        <input id="choice" type="radio" name="choose-choice">choice2
+        <br>
+        <input id="choice" type="radio" name="choose-choice">choice3
+        <br>
+        <input id="choice" type="radio" name="choose-choice">choice4
 
-                            <h3> Choose your favourite feature on a car</h3>
-                            <form action=" https://www.pistonheads.com/submit-broken-link2">
+        <h3> Choose your favourite feature on a car</h3>
+        <!--form was where "label" is--><label action=" https://www.pistonheads.com/submit-broken-link2">
 
-                                <label for="cars">Favourite Features</label>
-                                <select id="Features" name="Features">
+            <label for="cars">Favourite Features</label>
+        <select id="Features" name="Features">
                                 <option value="gadgets">Choose a feature</option>
                                 <option value="gadgets">Heated Seats</option>
                                 <option value="gadgets">Cruise Control</option>
@@ -64,9 +68,24 @@
                                 <option value="gadgets">Drift Mode</option>
                                 </select>
 
-                                <h3>Choose the options you want</h3>
-                                Checkboxes coming
-                                <!--<input</form>
+        <h3>Which features could you not live without</h3>
+        <!--see if a limit can be made on the number of checks-->
+        <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">wheels</label><br>
+        <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">wheels</label><br>
+        <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">wheels</label><br>
+        <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">wheels</label><br>
+        <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">wheels</label><br>
+        <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">wheels</label><br>
+        <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">wheels</label><br>
+        <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">wheels</label><br>
+        <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">wheels</label><br>
+
+
+
+
+    </form>
+
+    <!--<input</form>
                                 <input type="select" placeholder="This text needs changing 4"> -->
 </body>
 
