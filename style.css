@@ -5,10 +5,57 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    /*soluion to max width so that the background picture shrinks down on resizing;*/
 }
 
 #whole-form {
+    /*
     width: 400px;
     height: 50px;
+    box-sizing: border-box;*/
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    /*
+    width: 100vw;
+    height: 100vh;
+    */
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    grid-template-rows: 0.1fr 0.9fr;
+    /* 
+    this below should make a padding gap all around the form
+    padding: 10px;
+    */
     box-sizing: border-box;
+    border: 1px solid black
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.right-section {
+    border: 1px solid red;
+}
+
+.left-section {
+    border: 1px solid black;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.main-section {
+    border: 1px solid green;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
