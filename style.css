@@ -58,4 +58,5 @@ body {
     border: 1px solid green;
     grid-row-start: 2;
     grid-row-end: 3;
+    background: rgba(138, 43, 226, 0.7);
 }
