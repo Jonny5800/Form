@@ -27,7 +27,9 @@ body {
     font-weight: bold;
     font-size: 20px;
     display: grid;
-    grid-template-columns: 0.25 1fr 0.25fr;
+    /*
+    grid-template-columns: 0.33fr 0.34fr 0.33fr;
+    */
     grid-template-rows: 0.1fr 0.9fr;
     /* 
     this below should make a padding gap all around the form
@@ -73,4 +75,5 @@ body {
     background: rgba(138, 43, 226, 0.7);
     border-radius: 20px;
     padding-left: 30px;
+    min-width: 250px;
 }
