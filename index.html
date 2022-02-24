@@ -30,17 +30,18 @@
 
                 <h3>Name</h3>
                 <!--form was where "label" is--><label action=" https://www.pistonheads.com/submit-broken-link"></label>
-                <input</form class="form-box">
+                <input</form>
+                    <!--class="form-box" (was inside here)-->
                     <input type="text" placeholder="Enter your name">
 
                     <h3>E-mail</h3>
                     <!--form was where label is--><label action=" https://www.pistonheads.com/submit-broken-link2">
-                    <input</form class= "form-box">
+                    <input</form>  <!--class="form-box" (was inside here)-->
                         <input type="text" placeholder="Enter your E-mail">
     
-                        <h3>Age (optional)</h3>
+                <h3>Age (optional)</h3>
                         <!--form was where "label" is--><label action="https://www.pistonheads.com/submit-broken-link3">
-                            <input</form class= "form-box">
+                            <input</form> <!--class="form-box" (was inside here)-->
                                 <input type="number" placeholder="Select your age">
                                 <h3>Manufacturer</h3>
     
@@ -51,37 +52,39 @@
 
                     <select id="cars" name="cars">
                                     <option value="maker">Choose a car brand</option>
-                                    <option value="maker">Audi</option>
-                                    <option value="maker">BMW</option>
-                                    <option value="maker">Mecedes</option>    
-                                    <option value="maker">Tesla</option>    
-                                    <option value="maker">Mazda</option>
-                                    <option value="maker">Volkswagen</option>
-                                    <option value="maker">Other</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="bmw">BMW</option>
+                                    <option value="mercedes">Mecedes</option>    
+                                    <option value="tesla">Tesla</option>    
+                                    <option value="masda">Mazda</option>
+                                    <option value="volkswagen">Volkswagen</option>
+                                    <option value="other">Other</option>
                                     </select>
                     <!--^^input type needed, whether "submit" or otherwise-->
                     <!--</form>-->
                     <h3>Choose an car type</h3>
-                    <input id="choice" type="radio" name="choose-choice">Coupe
+                    <input id="coupe" type="radio" name="choose-choice">Coupe
                     <br>
-                    <input id="choice" type="radio" name="choose-choice">Saloon
+                    <input id="saloon" type="radio" name="choose-choice">Saloon
                     <br>
-                    <input id="choice" type="radio" name="choose-choice">SUV
+                    <input id="suv" type="radio" name="choose-choice">SUV
                     <br>
-                    <input id="choice" type="radio" name="choose-choice">Convertable
+                    <input id="convertable" type="radio" name="choose-choice">Convertable
+
+                    <!--^^input ID's above were previously all "choice"-->
 
                     <h3> Choose your favourite feature</h3>
                     <!--form was where "label" is--><label action=" https://www.pistonheads.com/submit-broken-link2">
     
                 <label for="cars">Favourite Features</label><br><br>
                     <select id="Features" name="Features">
-                                    <option value="gadgets">Choose a feature</option>
-                                    <option value="gadgets">Heated Seats</option>
-                                    <option value="gadgets">Cruise Control</option>
-                                    <option value="gadgets">Automatic Braking</option>    
-                                    <option value="gadgets">Automatic Headlights</option>    
-                                    <option value="gadgets">Sports Mode</option>
-                                    <option value="gadgets">Drift Mode</option>
+                                    <option value="choose">Choose a feature</option>
+                                    <option value="heated-seats">Heated Seats</option>
+                                    <option value="cruise-control">Cruise Control</option>
+                                    <option value="automatic-braking">Automatic Braking</option>    
+                                    <option value="automatic-headlights">Automatic Headlights</option>    
+                                    <option value="sports-mode">Sports Mode</option>
+                                    <option value="drift-mode">Drift Mode</option>
                                     </select>
 
                     <h3>Which features could you not live without</h3>
@@ -96,10 +99,29 @@
                     <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Heated Seats</label><br>
                     <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Sunroof</label><br>
 
+
+                    <h3>Say why you should win below</h3>
+
+                    <div class="text-area">
+                        <textarea id="subject" name="subject" placeholder="In 200 charagters or less, say why you deserve to win" maxlength="200" style="width: 300px; height: 50px;"></textarea>
+                    </div>
+
+                    <!--removed from above >>>> style="width:300px" <<<<<-->
+
+                    <br><br>
+
+                    <div class="text-area">
+                        <textarea id="subject" name="subject" placeholder="Box should grow with text input" maxlength="200" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                    </div>
                     <!--just copy pasted in from 
                         https://codepen.io/vjandrei/pen/nLOobQ
                         going to apply it to the existing checkboxes to limit options
                     -->
+
+                    <br>
+                    <input type="submit">
+
+
 
                     <br><br><br><br> ************************<br> working progress <br>(only 2 should be selectable)<br>
                     <input type="checkbox" class="check" name="check1" id="check1">

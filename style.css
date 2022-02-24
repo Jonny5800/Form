@@ -1,79 +1,85 @@
-body {
-    /*google image searched "2019 m4 bmw competition drift*/
-    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/roa070119fea-bmwm4-1-1562543156.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    /*soluion to max width so that the background picture shrinks down on resizing;*/
-}
-
-#whole-form {
-    /*
+        body {
+            /*google image searched "2019 m4 bmw competition drift*/
+            background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/roa070119fea-bmwm4-1-1562543156.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            /*soluion to max width so that the background picture shrinks down on resizing;*/
+        }
+        
+        #whole-form {
+            /*
     width: 400px;
     height: 50px;
     box-sizing: border-box;*/
-}
-
-body {
-    margin: 0;
-}
-
-.container {
-    /*
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .container {
+            /*
     width: 100vw;
     height: 100vh;
     */
-    font-weight: bold;
-    font-size: 20px;
-    display: grid;
-    /*
+            font-weight: bold;
+            font-size: 20px;
+            display: grid;
+            /*
     grid-template-columns: 0.33fr 0.34fr 0.33fr;
     */
-    grid-template-rows: 0.1fr 0.9fr;
-    /* 
+            grid-template-rows: 0.1fr 0.9fr;
+            /* 
     this below should make a padding gap all around the form
     padding: 10px;
     */
-    box-sizing: border-box;
-    border: 1px solid black
-}
-
-.header {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
-    /*
+            box-sizing: border-box;
+            border: 1px solid black
+        }
+        
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            /*
     border: 1px solid black;
     */
-}
-
-.form-box {
-    width: 300px;
-}
-
-.right-section {
-    /*
+        }
+        /*
+        .form-box {
+            width: 300px;
+        }
+        */
+        
+        .right-section {
+            /*
     border: 1px solid red;
     */
-}
-
-.left-section {
-    /*
+        }
+        
+        .left-section {
+            /*
     border: 1px solid black;
     */
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.main-section {
-    /*
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        
+        .main-section {
+            /*
     border: 1px solid green;
     */
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background: rgba(138, 43, 226, 0.7);
-    border-radius: 20px;
-    padding-left: 30px;
-    min-width: 250px;
-}
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background: rgba(138, 43, 226, 0.7);
+            border-radius: 20px;
+            padding-left: 30px;
+            min-width: 250px;
+        }
+        /*
+        .text-area {
+            height: 100px;
+            width: 300px;
+        }*/
