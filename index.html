@@ -17,6 +17,7 @@
         <div class="left-section">
             <!---left section-->
         </div>
+
         <div class="right-section">
             <!--right section-->
         </div>
@@ -30,27 +31,27 @@
 
                 <h3>Name</h3>
                 <!--form was where "label" is--><label action=" https://www.pistonheads.com/submit-broken-link"></label>
-                <input</form>
-                    <!--class="form-box" (was inside here)-->
-                    <input type="text" placeholder="Enter your name">
+                <!--<input</form> <<<<UNNESTING CHECK-->
+                <!--class="form-box" (was inside here)-->
+                <input type="text" placeholder="Enter your name">
 
-                    <h3>E-mail</h3>
-                    <!--form was where label is--><label action=" https://www.pistonheads.com/submit-broken-link2">
-                    <input</form>  <!--class="form-box" (was inside here)-->
-                        <input type="text" placeholder="Enter your E-mail">
+                <h3>E-mail</h3>
+                <!--form was where label is--><label action=" https://www.pistonheads.com/submit-broken-link2">
+                    <!--<input</form><<<<UNNESTING CHECK-->  <!--class="form-box" (was inside here)-->
+                <input type="text" placeholder="Enter your E-mail">
     
                 <h3>Age (optional)</h3>
                         <!--form was where "label" is--><label action="https://www.pistonheads.com/submit-broken-link3">
-                            <input</form> <!--class="form-box" (was inside here)-->
-                                <input type="number" placeholder="Select your age">
-                                <h3>Manufacturer</h3>
+                            <!--<input</form> <<<<UNNESTING CHECK--> <!--class="form-box" (was inside here)-->
+                <input type="number" placeholder="Select your age">
+                <h3>Manufacturer</h3>
     
-                                <!--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select-->
-                                <!--form was where "label" is--><label action=" https://www.pistonheads.com/submit-broken-link2">
+                <!--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select-->
+                <!--form was where "label" is--><label action=" https://www.pistonheads.com/submit-broken-link2">
     
-                                    <label for="cars"><!--"label for the manufacturer dropdown menu"--></label>
+                <label for="cars"><!--"label for the manufacturer dropdown menu"--></label>
 
-                    <select id="cars" name="cars">
+                <select id="cars" name="cars">
                                     <option value="maker">Choose a car brand</option>
                                     <option value="audi">Audi</option>
                                     <option value="bmw">BMW</option>
@@ -60,24 +61,25 @@
                                     <option value="volkswagen">Volkswagen</option>
                                     <option value="other">Other</option>
                                     </select>
-                    <!--^^input type needed, whether "submit" or otherwise-->
-                    <!--</form>-->
-                    <h3>Choose an car type</h3>
-                    <input id="coupe" type="radio" name="choose-choice">Coupe
-                    <br>
-                    <input id="saloon" type="radio" name="choose-choice">Saloon
-                    <br>
-                    <input id="suv" type="radio" name="choose-choice">SUV
-                    <br>
-                    <input id="convertable" type="radio" name="choose-choice">Convertable
+                <!--^^input type needed, whether "submit" or otherwise-->
+                <!--</form>-->
+                <h3>Choose an car type</h3>
+                <input id="coupe" type="radio" name="choose-choice">Coupe
+                <br>
+                <input id="saloon" type="radio" name="choose-choice">Saloon
+                <br>
+                <input id="suv" type="radio" name="choose-choice">SUV
+                <br>
+                <input id="convertable" type="radio" name="choose-choice">Convertable
 
-                    <!--^^input ID's above were previously all "choice"-->
+                <!--^^input ID's above were previously all "choice"-->
 
-                    <h3> Choose your favourite feature</h3>
-                    <!--form was where "label" is--><label action=" https://www.pistonheads.com/submit-broken-link2">
+
+                <h3> Choose your favourite feature</h3>
+                <!--form was where "label" is--><label action=" https://www.pistonheads.com/submit-broken-link2">
     
-                <label for="cars">Favourite Features</label><br><br>
-                    <select id="Features" name="Features">
+                    <label for="cars">Favourite Features</label><br><br>
+                <select id="Features" name="Features">
                                     <option value="choose">Choose a feature</option>
                                     <option value="heated-seats">Heated Seats</option>
                                     <option value="cruise-control">Cruise Control</option>
@@ -87,50 +89,50 @@
                                     <option value="drift-mode">Drift Mode</option>
                                     </select>
 
-                    <h3>Which features could you not live without</h3>
-                    <!--see if a limit can be made on the number of checks-->
-                    <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Cuise Control</label><br>
-                    <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Parking Sensors</label><br>
-                    <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Bluetooth Connection</label><br>
-                    <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Head Up Display</label><br>
-                    <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Air Conditioning</label><br>
-                    <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Spots Mode</label><br>
-                    <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Electric Handbrake</label><br>
-                    <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Heated Seats</label><br>
-                    <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Sunroof</label><br>
+                <h3>Which features could you not live without</h3>
+                <!--see if a limit can be made on the number of checks-->
+                <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Cuise Control</label><br>
+                <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Parking Sensors</label><br>
+                <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Bluetooth Connection</label><br>
+                <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Head Up Display</label><br>
+                <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Air Conditioning</label><br>
+                <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Spots Mode</label><br>
+                <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Electric Handbrake</label><br>
+                <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Heated Seats</label><br>
+                <label for="wheels"><input id="wheels" type="checkbox" name="car-qs">Sunroof</label><br>
 
 
-                    <h3>Say why you should win below</h3>
+                <h3>Say why you should win below</h3>
 
-                    <div class="text-area">
-                        <textarea id="subject" name="subject" placeholder="In 200 charagters or less, say why you deserve to win" maxlength="200" style="width: 300px; height: 50px;"></textarea>
-                    </div>
+                <div class="text-area">
+                    <textarea id="subject" name="subject" placeholder="In 200 charagters or less, say why you deserve to win" maxlength="200" style="width: 300px; height: 50px;"></textarea>
+                </div>
 
-                    <!--removed from above >>>> style="width:300px" <<<<<-->
+                <!--removed from above >>>> style="width:300px" <<<<<-->
 
-                    <br><br>
+                <br><br>
 
-                    <div class="text-area">
-                        <textarea id="subject" name="subject" placeholder="Box should grow with text input" maxlength="200" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-                    </div>
-                    <!--just copy pasted in from 
+                <div class="text-area">
+                    <textarea id="subject" name="subject" placeholder="Box should grow with text input" maxlength="200" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                </div>
+                <!--just copy pasted in from 
                         https://codepen.io/vjandrei/pen/nLOobQ
                         going to apply it to the existing checkboxes to limit options
                     -->
 
-                    <br>
-                    <input type="submit">
+                <br>
+                <input type="submit">
 
 
 
-                    <br><br><br><br> ************************<br> working progress <br>(only 2 should be selectable)<br>
-                    <input type="checkbox" class="check" name="check1" id="check1">
-                    <label class="layout" for="check1"></label>
+                <br><br><br><br> ************************<br> working progress <br>(only 2 should be selectable)<br>
+                <input type="checkbox" class="check" name="check1" id="check1">
+                <label class="layout" for="check1"></label>
 
-                    <input type="checkbox" class="check" name="check2" id="check2"> label class="layout" for="check2"></label>
+                <input type="checkbox" class="check" name="check2" id="check2"> label class="layout" for="check2"></label>
 
-                    <input type="checkbox" class="check" name="check3" id="check3">
-                    <label class="layout" for="check3"></label>
+                <input type="checkbox" class="check" name="check3" id="check3">
+                <label class="layout" for="check3"></label>
 
 
 
